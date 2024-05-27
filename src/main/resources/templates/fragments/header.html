@@ -3,91 +3,86 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="../css/styles.css"></link>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg bg-body-tertiary" data-th-fragment="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-			<!--   <nav class="navbar" data-th-fragment="navbar">
-			    <div class="nav-wrapper">
-			      <a href="#" class="brand-logo right">Logo</a>
-			      <ul id="nav-mobile" class="left hide-on-med-and-down">
-			        <li><a href="sass.html">Sass</a></li>
-			        <li><a href="badges.html">Components</a></li>
-			        <li><a href="collapsible.html">JavaScript</a></li>
-			      </ul>
-			    </div>
-			  </nav>
-		<div data-th-fragment="paginacion">
-				<ul class="pagination">
-			    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-			    <li class="active"><a href="#!">1</a></li>
-			    <li class="waves-effect"><a href="#!">2</a></li>
-			    <li class="waves-effect"><a href="#!">3</a></li>
-			    <li class="waves-effect"><a href="#!">4</a></li>
-			    <li class="waves-effect"><a href="#!">5</a></li>
-			    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-			  </ul>
-		</div> -->
-			  
-	
-          <div class="container" data-th-fragment="footer" >
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body nav-size" data-bs-theme="dark"
+		data-th-fragment="navbar">
+		<div class="container-fluid div-c">
+			
+				<a class="navbar-brand col-2 p-3 mb-2 nav-bar-logoN collapse navbar-collapse"  id="navbarSupportedContent"
+					href="#"> 
+					<img src="/imagenes/logo-fi-unju-institucional-285x159.png" class="rounded float-start logo-img log-img" alt="Logo UNJU">
+				    <span class="brand-info">
+				        <span class="brand-name">Facultad de Ingeniería<br>Universidad Nacional de Jujuy</span>
+				        <span class="eslogan">Flamman Tva Hoc Foco Accende</span>
+				    </span>		
+				</a>
+			
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse"  id="navbarSupportedContent">
+				<ul class="navbar-nav d-flex justify-content-center aligan-items-center custom-gap">
+					<li class="nav-item size-nav">
+						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+					</li>
+					<li class="nav-item size-nav">
+						<a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+					</li>
+					<li class="nav-item size-nav">
+						<a class="nav-link active" aria-current="page" href="#">Carreras</a>
+					</li>
+					<li class="nav-item size-nav">
+						<a class="nav-link active" aria-current="page" href="#">Noticias</a>
+					</li>
+					<li class="nav-item size-nav">
+						<a class="nav-link active" aria-current="page" href="#">Contacto</a>
+					</li>
+				</ul>
+				<form class="d-flex ms-auto" role="search">
+					<div class="input-group input-group-sm mb-3">
+					
+						<input class="form-control me-1" type="search" placeholder="Buscar"
+							aria-label="Search">
+					</div>						
+					<button class="btn btn-outline-success size-nav btn-xs" type="submit" style="--bs-btn-padding-y: 0.25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Buscar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div class="container" data-th-fragment="footer">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Footer Content</h5>
+				<p class="grey-text text-lighten-4">You can use rows and columns
+					here to organize your footer content.</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<h5 class="white-text">Links</h5>
+				<ul>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© 2014 Copyright Text <a class="grey-text text-lighten-4 right"
+				href="#!">More Links</a>
+		</div>
+	</div>
 
 </body>
 </html>
