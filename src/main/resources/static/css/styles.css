@@ -21,6 +21,7 @@ body {
     padding-top: 70px; 
 }
 
+
 nav{
 	 border-radius: 10px;	
 	 box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -245,7 +246,7 @@ hr.h-color{
 
 /*NOTICIAS */
 .news-section {
-    background-color: #f8f9fa;
+    background-color: #EEEEEE;
 }
 
 .news-card {
