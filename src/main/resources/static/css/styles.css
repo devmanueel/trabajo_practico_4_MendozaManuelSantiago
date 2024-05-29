@@ -17,13 +17,16 @@ html, body{
     background-color: #EEEEEE;
     scroll-behavior: smooth;
 }
+body {
+    padding-top: 70px; 
+}
 
 nav{
 	 border-radius: 10px;	
 	 box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 .nav-bar-logoN {
-      font-size: 0.55rem; /* Ajusta el tamaño de la fuente aquí */
+      font-size: 0.55rem; 
       
     }
     
@@ -293,9 +296,9 @@ hr.h-color{
 	cursor: pointer;
 }
 .icon-size-carrera{
-    font-size: 1.5em; /* Ajusta el tamaño del icono según tus necesidades */
-    margin-right: 10px; /* Añade espacio a la derecha del icono */
-    vertical-align: middle; /* Centra el icono verticalmente con el texto */
+    font-size: 1.5em; 
+    margin-right: 10px; 
+    vertical-align: middle; 
 }
 .carreras{
 	background-color: #222831;

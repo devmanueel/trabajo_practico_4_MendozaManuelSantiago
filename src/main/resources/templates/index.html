@@ -15,9 +15,11 @@
 </head>
 
 
-<body>
+<body >
+	<div class="container-fluid mt-5 pt-5">
 	
-		<div class="container-fluid">
+	
+		<div >
 			<header>
 				<div data-th-replace="~{fragments/header::navbar}">
 				</div>
@@ -32,12 +34,17 @@
 						industrial, informática y electromecánica. Con un enfoque en investigación y desarrollo tecnológico, ofrece programas de grado y posgrado, 
 						promoviendo la innovación y el emprendimiento. La facultad mantiene una estrecha relación con la industria y el sector público, 
 						facilitando prácticas y proyectos que benefician a la comunidad y preparan a sus estudiantes para los desafíos profesionales.</h2>
+						<h1 class="titulo-inico">Nuestos ingresantes</h1>
+						<div class="ratio ratio-21x9">
+							<iframe width="460" height="215" src="https://www.youtube.com/embed/gOFUCJbumOA?si=SjaHevzzIfO5xV0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>					
+						</div>
+					
 				</div>
 			</section>
 			<br>
 			<!--ACERCA DE y ASIDE-->
 			
-			<div class="container-felx text-center ">
+			<div class="container-felx text-center " id="acerca-de">
 			  <div class="row contenerdor-acera-de justify-content-md-center" style="background-color: #222831">
 			  <h2 class="mb-4" style="color: #EEEEEE">Acerca de la Facultad de Ingeniería de UNJU</h2>
 			    <div class="col-3">
@@ -50,7 +57,7 @@
 								      <i class="bi bi-collection"></i> 
 								    </div>
 								    <div class="col align-self-center text-aside1">
-								      <a class="nav-link align-self-center" href="#"> Bibloteca  </a>
+								      <a class="nav-link align-self-center" href="https://www.fi.unju.edu.ar/servicios/biblioteca.html" target="_black"> Bibloteca  </a>
 								    </div>
 								 </div>
 		                    </li>
@@ -60,7 +67,7 @@
 								      <i class="bi bi-calendar3-week"></i> 
 								    </div>
 								    <div class="col align-self-center text-aside2">
-								      <a class="nav-link align-self-center" href="#">Calendario Académico </a>
+								      <a class="nav-link align-self-center" href="https://www.fi.unju.edu.ar/secretarias/sec-academica/calendario-academico.html" target="_black">Calendario Académico </a>
 								    </div>
 								 </div>
 		                    </li>
@@ -70,7 +77,7 @@
 								      <i class="bi bi-book-half"></i> 
 								    </div>
 								    <div class="col align-self-center text-aside3">
-								      <a class="nav-link align-self-center" href="#">UNJU Virtual </a>
+								      <a class="nav-link align-self-center" href="https://virtual.unju.edu.ar" target="_black">UNJU Virtual </a>
 								    </div>
 								 </div>
 		                    </li>
@@ -80,7 +87,7 @@
 								      <i class="bi bi-person-workspace"></i>
 								    </div>
 								    <div class="col align-self-center text-aside4">
-								      <a class="nav-link align-self-center" href="#">Aulas Virtuales </a>
+								      <a class="nav-link align-self-center" href="https://www.fi.unju.edu.ar/aulas-virtuales-es/" target="_black">Aulas Virtuales </a>
 								    </div>
 								 </div>
 		                    </li>
@@ -90,7 +97,7 @@
 								      <i class="bi bi-clipboard2-check"></i>
 								    </div>
 								    <div class="col align-self-center text-aside5">
-								      <a class="nav-link align-self-center" href="#">Revalida </a>
+								      <a class="nav-link align-self-center" href="https://www.fi.unju.edu.ar/tramites/revalida" target="_black">Revalida </a>
 								    </div>
 								 </div>
 		                    </li>
@@ -132,7 +139,7 @@
 			</div>
 			
 			<!-- NOTICIAS -->
-			<section class="news-section py-5">
+			<section class="news-section py-5" id="noticias">
 		        <div class="container ">
 		        	 <div class="position-relative">
 					        <div class="position-absolute top-0 start-50 translate-middle-x ">
@@ -178,9 +185,8 @@
 		                   
 		                </div>
 		            </div>
-		            <div class="d-grid gap-2 col-6 mx-auto">
-					  <button class="btn btn-primary btn-nocias-unju btn btn-dark" type="button">Mas Noticias FI-UNJU</button>
-					
+		           <div class="d-grid gap-2 col-6 mx-auto">
+					    <a href="https://www.fi.unju.edu.ar/noticias-generales/4585-charla-computacion-de-alto-rendimiento-y-biometria.html" class="btn btn-primary btn-nocias-unju btn btn-dark" role="button" target="_black">Mas Noticias FI-UNJU</a>
 					</div>
 		        </div>
 		    </section>
@@ -188,7 +194,7 @@
 			
 			<!-- CARRERAS -->
 			
-			<div class="container-fluid carreras">
+			<div class="container-fluid carreras" id="carreras">
 			  <div class="row">
 			   	<div class="row">
 		            <div class="col-12 text-center"> 
@@ -319,9 +325,10 @@
 			</footer>		
 		</div>
 	
-			
+	</div>		
 	 <!--JavaScript at end of body for optimized loading-->
       <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 	<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+	
 </body>
 </html>
