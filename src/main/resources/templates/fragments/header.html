@@ -2,13 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title data-th-text="${titulo}"></title>
 <link rel="stylesheet" href="../css/styles.css"></link>
+<link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+
 </head>
 <body>
 
 <!-- NAVBAR-->
-	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body nav-size fixed-top" data-bs-theme="dark"
+<header>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body nav-size " data-bs-theme="dark"
 		data-th-fragment="navbar">
 	<div class="container-fluid div-c">
 		<a class="navbar-brand col-2 p-3 mb-2 nav-bar-logoN collapse navbar-collapse"  id="navbarSupportedContent"
@@ -52,11 +56,12 @@
 		</div>
 	</div>
 </nav>
+</header>
 <!-- NAVBAR-->	
 	
 <!-- FOTTER-->
 
-	<footer class="footer mt-auto py-3" id="contacto">
+	<div class="footer mt-auto py-3" id="contacto" data-th-fragment="footer">
         <div class="container fuente">
             <div class="row">
                 <div class="col-md-3" >
@@ -92,7 +97,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 <!-- FOTTER-->
+<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

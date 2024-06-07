@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/principal")
+@RequestMapping("/principal") //peticion base
 
 public class MainController {
 	
