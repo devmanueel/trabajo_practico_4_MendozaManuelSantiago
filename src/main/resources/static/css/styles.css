@@ -17,11 +17,13 @@ html, body{
     background-color: #EEEEEE;
     scroll-behavior: smooth;
 }
-body {
+/* body {
     padding-top: 70px; 
 }
-
-
+ */
+.container-fluid{
+	padding: 0px;
+}
 nav{
 	 border-radius: 10px;	
 	 box-shadow: 0 0 20px rgba(0,0,0,0.5);
