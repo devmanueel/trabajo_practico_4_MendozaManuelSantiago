@@ -20,32 +20,32 @@
         <form data-th-object="${nuevoDocente}" data-th-action="${edicion}?@{/docente/modificar} : @{/docente/guardar}" method="post">
             <div class="col-sm-6">   
                 <label for="codigo" class="form-label">Legajo: </label> 
-                <input type="text" class="form-control" id="legajo" data-th-field="*{legajo}" data-th-readonly="${edicion}">
+                <input type="text" class="form-control" id="legajo" data-th-field="*{legajo}" data-th-readonly="${edicion}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Nombre: </label>
-                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Apellido: </label>
-                <input type="text" class="form-control" id="apellido" data-th-field="*{apellido}">
+                <input type="text" class="form-control" id="apellido" data-th-field="*{apellido}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Email: </label>
-                <input type="email" class="form-control" id="email" data-th-field="*{email}">
+                <input type="email" class="form-control" id="email" data-th-field="*{email}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Telefono: </label>
-                <input type="number" class="form-control" id="telefono" data-th-field="*{telefono}">
+                <input type="number" class="form-control" id="telefono" data-th-field="*{telefono}" required="required">
             </div>
             
 			<div class="col-sm-6">
                 <label for="nombre" class="form-label">Foto: </label>
-                 <select class="form-select " data-th-field="*{foto}">
+                 <select class="form-select " data-th-field="*{foto}" required="required">
                     <option data-th-value="sosa.jpg" selected>Profe Sosa</option>
                     <option data-th-value="vega.png">Profe Vega</option>
                     <option data-th-value="JCR.png">Profe Juan Carlos</option>

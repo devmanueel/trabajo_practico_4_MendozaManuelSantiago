@@ -21,42 +21,42 @@
         <div class="col-4">
             <div class="col-sm-12">   
                 <label for="codigo" class="form-label">LU: </label> 
-                <input type="text" class="form-control" id="LU" data-th-field="*{LU}" data-th-readonly="${edicion}">
+                <input type="text" class="form-control" id="LU" data-th-field="*{LU}" data-th-readonly="${edicion}" required="required">
             </div>
             
             <div class="col-sm-12">
                 <label for="nombre" class="form-label">DNI: </label>
-                <input type="text" class="form-control" id="dni" data-th-field="*{dni}">
+                <input type="text" class="form-control" id="dni" data-th-field="*{dni} " required="required">
             </div>
             
             <div class="col-sm-12">
                 <label for="nombre" class="form-label">Nombre: </label>
-                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}" required="required">
             </div>
             
             <div class="col-sm-12">
                 <label for="nombre" class="form-label">Apellido: </label>
-                <input type="text" class="form-control" id="apellido" data-th-field="*{apellido}">
+                <input type="text" class="form-control" id="apellido" data-th-field="*{apellido}" required="required">
             </div>
             	
         </div>
         <div class="col ">
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Email: </label>
-                <input type="email" class="form-control" id="email" data-th-field="*{email}">
+                <input type="email" class="form-control" id="email" data-th-field="*{email}" required="required">
             </div>
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Fecha De Nacimiento: </label>
-                <input type="date" class="form-control" id="telefono" data-th-field="*{fechaNacimiento}">
+                <input type="date" class="form-control" id="telefono" data-th-field="*{fechaNacimiento}" required="required">
             </div>
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Telefono: </label>
-                <input type="number" class="form-control" id="telefono" data-th-field="*{telefono}">
+                <input type="number" class="form-control" id="telefono" data-th-field="*{telefono}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Foto: </label>
-                 <select class="form-select " data-th-field="*{foto}">
+                 <select class="form-select " data-th-field="*{foto}" required="required">
                     <option data-th-value="alumno.png" selected>Logo Alumno 1</option>
                     <option data-th-value="alumnoN2.png">Logo Alumno 2</option>
                     <option data-th-value="alumnoN3.png">Logo Alumno 3</option>

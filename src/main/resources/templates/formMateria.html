@@ -20,27 +20,27 @@
         <form data-th-object="${nuevaMateria}" data-th-action="${edicion}?@{/materia/modificar} : @{/materia/guardar}" method="post">
             <div class="col-sm-6">   
                 <label for="codigo" class="form-label">Codigo</label> 
-                <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" data-th-readonly="${edicion}">
+                <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" data-th-readonly="${edicion}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Nombre Materia: </label>
-                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="curso" class="form-label">Curso: </label>
-                <input type="text" class="form-control" id="curso" data-th-field="*{curso}">
+                <input type="text" class="form-control" id="curso" data-th-field="*{curso}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="cantidad" class="form-label">Cantidad de Horas: </label>
-                <input type="text" class="form-control" id="cantidad" data-th-field="*{cantidadHoras}">
+                <input type="text" class="form-control" id="cantidad" data-th-field="*{cantidadHoras}" required="required">
             </div>
             
              <div class="row mb-3 justify-content-center col-3">
              	<label for="modalidad" class="form-label">Modalidad: </label>
-                <select class="form-select " data-th-field="*{modalidad}">
+                <select class="form-select " data-th-field="*{modalidad}" required="required">
                     <option data-th-value="VIRTUAL" selected>Virtual</option>
                     <option data-th-value="PRESENCIAL">Presencial</option>
                 </select>

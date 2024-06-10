@@ -20,21 +20,21 @@
         <form data-th-object="${nuevaCarrera}" data-th-action="${edicion}?@{/carrera/modificar} : @{/carrera/guardar}" method="post">
             <div class="col-sm-6">   
                 <label for="codigo" class="form-label">Codigo</label> 
-                <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" data-th-readonly="${edicion}">
+                <input type="text" class="form-control" id="codigo" data-th-field="*{codigo}" data-th-readonly="${edicion}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="nombre" class="form-label">Nombre Carrera</label>
-                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}">
+                <input type="text" class="form-control" id="nombre" data-th-field="*{nombre}" required="required">
             </div>
             
             <div class="col-sm-6">
                 <label for="cantidad" class="form-label">Cantidad Años</label>
-                <input type="number" class="form-control" id="cantidad" data-th-field="*{cantidadAnios}">
+                <input type="number" class="form-control" id="cantidad" data-th-field="*{cantidadAnios}" required="required">
             </div>
              <div data-th-if="${edicion}" class="row mb-3 justify-content-center col-3">
              	<label for="cantidad" class="form-label">ESTADO: </label>
-                <select class="form-select " data-th-field="*{estado}">
+                <select class="form-select " data-th-field="*{estado}" required="required">
                     <option data-th-value="true" selected>Activo</option>
                     <option data-th-value="false">Inactivo</option>
                 </select>
