@@ -2,22 +2,25 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Alumno {
 	private int dni;
     private String nombre;
     private String apellido;
     private String email;
-    private int telefono;
+    private long telefono;
     private LocalDate fechaNacimiento;
     private String domicilio;
-    private int LU;
+    private String LU;
+    private String foto;
 	
     public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Alumno(int dni, String nombre, String apellido, String email, int telefono, LocalDate fechaNacimiento,
-			String domicilio, int lU) {
+	public Alumno(int dni, String nombre, String apellido, String email, long telefono, LocalDate fechaNacimiento,
+			String domicilio, String lU, String foto) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -26,6 +29,7 @@ public class Alumno {
 		this.fechaNacimiento = fechaNacimiento;
 		this.domicilio = domicilio;
 		LU = lU;
+		this.foto = foto;
 	}
 
 	public int getDni() {
@@ -60,11 +64,11 @@ public class Alumno {
 		this.email = email;
 	}
 
-	public int getTelefono() {
+	public long getTelefono() {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
+	public void setTelefono(long telefono) {
 		this.telefono = telefono;
 	}
 
@@ -84,13 +88,22 @@ public class Alumno {
 		this.domicilio = domicilio;
 	}
 
-	public int getLU() {
+	public String getLU() {
 		return LU;
 	}
 
-	public void setLU(int lU) {
+	public void setLU(String lU) {
 		LU = lU;
 	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+    
     
     
 }
